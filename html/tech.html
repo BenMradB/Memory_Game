@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game | Technologies</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../css/all.min.css">
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+        <div class="audio-controller">
+            <div class="volume volume-on visible">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+
+            <div class="volume volume-of hidden">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </div>
+        </div>
+
+        <div class="victory hidden">
+            <div class="overlay"></div>
+            <div class="container centering">
+                <div class="info">
+                    <span class="player-name">Unknown</span>
+                    <span class="text">
+                        You Win The Game With Score 
+                        <span class="score">0</span> 
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="loss hidden">
+            <div class="overlay"></div>
+            <div class="container centering">
+                <div class="info">
+                    <span class="player-name">Unknown</span>
+                    <span class="text">
+                        You Lose The Game
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="levels-container visible">
+            <div class="overlay"></div>
+            <div class="container centering">
+                <div class="form">
+                    <input type="text" placeholder="Player Name" name="player-name" autofocus>
+                    <div class="levels">
+                        <div class="level">
+                            <input type="radio" name="r1" id="e">
+                            <label for="e">Easy</label>
+                        </div>
+                        <div class="level">
+                            <input type="radio" name="r1" id="m">
+                            <label for="m">Medium</label>
+                        </div>
+                        <div class="level">
+                            <input type="radio" name="r1" id="h">
+                            <label for="h">Hard</label>
+                        </div>
+                    </div>
+                    <input type="button" value="Click To Play">
+                </div>
+            </div>
+        </div>
+
+        <div class="sweet-alert hidden">
+            <div class="overlay"></div>
+            <div class="container centering">
+                <span class="error-message"></span>
+                <button>Ok</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="container">
+                <div>
+                    <span>Hello :</span><span class="player-name">unknown</span>
+                </div>
+
+                <div>
+                    <span class="timer">0</span><span>second</span>
+                </div>
+
+                <div>
+                    <span>Wrong Tries :</span><span class="wrong-tries">0</span>
+                </div>
+
+                <div>
+                    <span>Your Best Score :</span><span class="your-best-score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="container">
+                <div class="box" data-tech="jest">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/jest.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="css3">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/css3.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="github">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/github.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="html5">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/html5.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="react">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/react.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="vuejs">
+                    <div class="face front"></div>   
+                    <div class="face back">
+                        <img src="../Images/tech/vuejs.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="jest">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/jest.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="css3">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/css3.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="github">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/github.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="html5">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/html5.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="react">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/react.png" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="vuejs">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="../Images/tech/vuejs.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
